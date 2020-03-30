@@ -1,3 +1,4 @@
+'use strict'
 const mainMenu = [[{name: 'Target System',url: ''},
     [{name: 'Desktop (Public)',url: ''}, [{name: 'Start Menu',url: ''}, [{name: 'Programs',url: ''},
                                                                {name: 'Product Name',url: ''},
@@ -55,7 +56,7 @@ menuSistem.onclick = function (event) {
     let popupShadow = document.getElementById('popupShadow');
     let popup = document.getElementById('popup');
 
-    if (target.tagName = 'LI') {
+    if (target.tagName === 'LI') {
         if (target.className === 'window') {
             popup.style.display = 'block';
             setTimeout(function () {
